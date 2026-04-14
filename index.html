@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeinRechner Finanzen</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #f6f1e8;
+            background:
+                radial-gradient(circle at top left, rgba(63, 154, 140, 0.24), transparent 32%),
+                radial-gradient(circle at bottom right, rgba(8, 47, 61, 0.62), transparent 40%),
+                linear-gradient(160deg, #123040 0%, #08151d 78%);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 880px;
+            margin: 0 auto;
+            padding: 64px 24px 80px;
+        }
+        .eyebrow {
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            font-size: 0.82rem;
+            color: #b9d6d0;
+            margin-bottom: 18px;
+            font-weight: 700;
+        }
+        h1 {
+            font-size: clamp(2.4rem, 5vw, 4.4rem);
+            line-height: 1.02;
+            font-weight: 700;
+            max-width: 760px;
+            margin-bottom: 18px;
+        }
+        .lead {
+            max-width: 720px;
+            font-size: 1.08rem;
+            color: rgba(246, 241, 232, 0.86);
+            margin-bottom: 36px;
+        }
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 18px;
+            margin: 42px 0 54px;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.07);
+            border: 1px solid rgba(185, 214, 208, 0.16);
+            border-radius: 22px;
+            padding: 24px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 18px 40px rgba(0, 0, 0, 0.2);
+        }
+        .card h2 {
+            font-size: 1.05rem;
+            margin-bottom: 10px;
+            color: #f6f1e8;
+        }
+        .card p {
+            color: rgba(246, 241, 232, 0.76);
+            font-size: 0.96rem;
+        }
+        .button-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            margin-top: 26px;
+        }
+        .button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 180px;
+            padding: 14px 20px;
+            border-radius: 999px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.15s ease, opacity 0.15s ease;
+        }
+        .button:hover {
+            transform: translateY(-1px);
+            opacity: 0.96;
+        }
+        .button-primary {
+            background: #c6e0d8;
+            color: #0d2430;
+        }
+        .button-secondary {
+            background: rgba(255, 255, 255, 0.08);
+            color: #f6f1e8;
+            border: 1px solid rgba(246, 241, 232, 0.16);
+        }
+        .footer {
+            margin-top: 60px;
+            color: rgba(246, 241, 232, 0.62);
+            font-size: 0.92rem;
+        }
+        .footer a {
+            color: #f6f1e8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="eyebrow">MeinRechner Finanzen</div>
+        <h1>Finanzrechner fuer Deutschland. Schnell, klar und ohne Tabellenchaos.</h1>
+        <p class="lead">
+            MeinRechner Finanzen ist eine fokussierte iPhone- und iPad-App mit sechs
+            Finanzrechnern fuer den deutschen Alltag. Kredit, Sparen, Inflation und Rente
+            sind sofort nutzbar. Premium schaltet Abfindung, Grunderwerbsteuer, unbegrenzten
+            Verlauf und keine Bannerwerbung frei.
+        </p>
+
+        <div class="card-grid">
+            <div class="card">
+                <h2>Vier starke Gratis-Rechner</h2>
+                <p>Kredit, Sparen, Inflation und Rente mit klaren Ergebnissen direkt in der App.</p>
+            </div>
+            <div class="card">
+                <h2>Premium mit echtem Mehrwert</h2>
+                <p>Abfindung, Grunderwerbsteuer, unbegrenzter Verlauf und keine Bannerwerbung.</p>
+            </div>
+            <div class="card">
+                <h2>Ehrlich statt ueberverkauft</h2>
+                <p>Lokale Berechnung, offengelegte Grenzen und keine falsche Beratungssicherheit.</p>
+            </div>
+        </div>
+
+        <div class="button-row">
+            <a class="button button-primary" href="./privacy.html">Datenschutz</a>
+            <a class="button button-secondary" href="./support.html">Support</a>
+            <a class="button button-secondary" href="./terms.html">Nutzungsbedingungen</a>
+        </div>
+
+        <div class="footer">
+            <p>Kontakt: <a href="mailto:ivan@cosmicproduction.hr">ivan@cosmicproduction.hr</a></p>
+            <p>&copy; 2026 SoftSplit d.o.o. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
